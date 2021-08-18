@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HIREMAN</string>
+    <string name="EnterName">PleaseEnterName</string>
+    <string name="EnterlastName">Please Enter Last Name</string>
+    <string name="EnterBirthDate">PleaseEnterBirthDate</string>
+    <string name="EnterMobileno">PleaseEnterMobileNumber</string>
+    <string name="EnterPassword">PleasEnterPassword</string>
+    <string name="EnterAddress">PleaseEnterAddress</string>
+    <string name="Enterstaffid">PleaseEnterStaffID</string>
+    <string name="EnterStaffType">PleaseEnterstaffType</string>
+</resources>

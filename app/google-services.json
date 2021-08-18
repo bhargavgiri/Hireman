@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "928337840332",
+    "project_id": "hireman-c69f2",
+    "storage_bucket": "hireman-c69f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928337840332:android:f5f59fc15e68ed2b1d1a69",
+        "android_client_info": {
+          "package_name": "com.example.hireman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928337840332-pftt4nqo7p953js0014cfh2avakgk5rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA7lrtdgXTKArvdEfqiNNeQ5kYzOernls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928337840332-pftt4nqo7p953js0014cfh2avakgk5rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

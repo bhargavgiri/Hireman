@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Staff.StaffRegisterActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tool_bar_style"
+        android:elevation="4dp"
+        android:paddingStart="25dp"
+        android:paddingLeft="25dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Admin Control"
+        app:titleMarginStart="65dp"
+        app:titleMarginTop="4dp"
+        android:layout_marginTop="10dp"
+        app:titleTextColor="#fff" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width= "8dp"
+        android:id="@+id/crimage"
+        app:civ_border_color= "@color/colorPrimary"
+        android:src= "@drawable/logo"
+        android:layout_centerInParent= "true"
+        android:layout_width= "150dp"
+        android:layout_below="@id/toolbar11"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height= "150dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/crimage">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/backgroundbox"
+            android:id="@+id/splist"/>
+
+        <EditText
+            android:id="@+id/edname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Fist Name"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/edlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Last Name"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/eddob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff DOB "
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/edphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Phone no"
+            android:textColor="#000"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/edaddrass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Address"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/edStaffUid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff ID"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Password"
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/btncreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Staff"
+
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.User_Send_RequestActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp"
+        android:src="@drawable/common_google_signin_btn_icon_light_focused"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/profileimage"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/abcd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/backgroundbox"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastname"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/firstname"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+        android:textColor="@color/black"
+       />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile"
+        android:textSize="20dp"
+        android:layout_below="@+id/abcd"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dob"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sent Request"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
