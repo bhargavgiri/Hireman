@@ -5,18 +5,20 @@ public class UserData {
     private String lastname;
     private String dob;
     private String address;
+    private String staffPrice;
     private String mobile;
     private String profileimage;
     private String uid;
 
-    public UserData(String firstname, String lastname, String dob, String address, String mobile, String profileimage, String uid) {
+    public UserData(String firstname, String lastname, String dob, String address, String staffPrice, String mobile, String profileimage, String uid) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.dob = dob;
         this.address = address;
+        this.staffPrice = staffPrice;
         this.mobile = mobile;
-        this.profileimage=profileimage;
-        this.uid=uid;
+        this.profileimage = profileimage;
+        this.uid = uid;
     }
 
     public UserData() {

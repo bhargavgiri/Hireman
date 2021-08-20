@@ -105,6 +105,16 @@
             android:layout_centerHorizontal="true"
             />
         <EditText
+            android:id="@+id/edPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Staff Price One Hours "
+            android:textColor="#000"
+            android:textColorHint="@color/purple_200"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
             android:id="@+id/edStaffUid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -129,7 +139,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create Staff"
-
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 </RelativeLayout>

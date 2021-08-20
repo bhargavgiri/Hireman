@@ -8,4 +8,5 @@
     <string name="EnterAddress">PleaseEnterAddress</string>
     <string name="Enterstaffid">PleaseEnterStaffID</string>
     <string name="EnterStaffType">PleaseEnterstaffType</string>
+    <string name="EnterStaffPirce">Pealse Enter Staff Price One Hours</string>
 </resources>

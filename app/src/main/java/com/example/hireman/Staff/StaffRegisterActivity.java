@@ -38,7 +38,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class StaffRegisterActivity extends AppCompatActivity implements View.OnClickListener {
     CircleImageView crimage;
-    EditText edname,edlastname,eddob,edphoneno,edaddrass,edStaffUid,edPassword;
+    EditText edname,edlastname,eddob,edphoneno,edaddrass,edPrice,edStaffUid,edPassword;
     Button btncreate;
     Spinner splist;
     String catogary[]={"Select catogory","Hospitality","House Keeper","Driver","Other"};
@@ -59,7 +59,7 @@ public class StaffRegisterActivity extends AppCompatActivity implements View.OnC
         edStaffUid=findViewById(R.id.edStaffUid);
         edPassword=findViewById(R.id.edPassword);
         btncreate=findViewById(R.id.btncreate);
-
+        edPrice=findViewById(R.id.edPrice);
 
         crimage.setOnClickListener(this);
         btncreate.setOnClickListener(this);
@@ -82,6 +82,7 @@ public class StaffRegisterActivity extends AppCompatActivity implements View.OnC
         validation.addValidation(this, R.id.edStaffUid, RegexTemplate.NOT_EMPTY, R.string.Enterstaffid);
         validation.addValidation(this, R.id.edPassword, RegexTemplate.NOT_EMPTY, R.string.EnterPassword);
         validation.addValidation(this, R.id. splist, RegexTemplate.NOT_EMPTY, R.string.EnterStaffType);
+        validation.addValidation(this,R.id.edPrice,RegexTemplate.NOT_EMPTY,R.string.EnterStaffPirce);
 
         splist.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -168,6 +169,7 @@ public class StaffRegisterActivity extends AppCompatActivity implements View.OnC
                                 intent.putExtra("edPassword",edPassword.getText().toString().trim());
                                 intent.putExtra("crimage",profileimage);
                                 intent.putExtra("catogary",catogaryselect);
+                                intent.putExtra("edPrice",edPrice.getText().toString());
                                 startActivity(intent);
 
                             }

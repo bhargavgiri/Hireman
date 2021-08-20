@@ -53,7 +53,7 @@ public class OTP_Verification extends AppCompatActivity {
     FirebaseFirestore firestore,firebaseFirestore,getFirestore;
 
     //Staff Reg
-    String edphoneno,staffOtp,edname,edlastname,eddob,edaddrass,edStaffUid,edPassword,crimage,catogary;
+    String edphoneno,staffOtp,edname,edlastname,eddob,edaddrass,edPrice,edStaffUid,edPassword,crimage,catogary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +94,7 @@ public class OTP_Verification extends AppCompatActivity {
         edPassword=getIntent().getStringExtra("edPassword");
         crimage=getIntent().getStringExtra("crimage");
         catogary=getIntent().getStringExtra("catogary");
-
+        edPrice=getIntent().getStringExtra("edPrice");
 
 
        //Toast.makeText(this,firstname+"  "+lastname+"  "+dob+"  "+address+"  "+mobile+"  "+profileimage+"  ", Toast.LENGTH_LONG).show();
@@ -117,7 +117,7 @@ public class OTP_Verification extends AppCompatActivity {
                             no4.getText().toString().trim() +
                             no5.getText().toString().trim() +
                             no6.getText().toString().trim();
-                    if(firstname != null && lastname != null && dob !=null && address != null && mobile != null ) {
+                    if(firstname != null && lastname != null && dob !=null && address != null && mobile != null && edPrice !=null) {
 
                         if (getotpbackend != null) {
                             progressBarverifyotp.setVisibility(View.VISIBLE);
@@ -141,7 +141,7 @@ public class OTP_Verification extends AppCompatActivity {
                                                             public void onSuccess(Uri uri) {
                                                                 String uid = FirebaseAuth.getInstance().getUid();
                                                                 //Toast.makeText(OTP_Verification.this,uid, Toast.LENGTH_SHORT).show();
-                                                                UserData userData = new UserData(firstname, lastname, dob, address, mobile, uri.toString(),uid);
+                                                                UserData userData = new UserData(firstname, lastname, dob, address,edPrice, mobile, uri.toString(),uid);
                                                                 firestore.collection("User").document(uid).set(userData).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                     @Override
                                                                     public void onSuccess(Void aVoid) {
